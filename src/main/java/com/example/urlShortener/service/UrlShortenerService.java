@@ -17,7 +17,7 @@ public class UrlShortenerService {
     @Autowired
     private UrlShortenerRepository urlShortenerRepository;
 
-    private static final String BASE_URL = "https://localhost:8080/url/";
+    private static final String BASE_URL = "http://localhost:8080/url/";
 
     public UrlMapping shortenUrl(String originalUrl) {
         return urlShortenerRepository.findByOriginalUrl(originalUrl)
